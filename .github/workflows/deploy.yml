@@ -80,4 +80,4 @@ jobs:
         env:
           OWNER: '${{ github.repository_owner }}'
       - run: |
-          kubectl set image deployment/2025_01_17_k8s 2025_01_17_k8s=ghcr.io/${{ env.OWNER_LC }}/2025_01_17_k8s:${{ needs.makeTagAndRelease.outputs.tag_name }}
+          kubectl set image deployment/sb-k8s-2501 2025_01_17_k8s=ghcr.io/${{ env.OWNER_LC }}/2025_01_17_k8s:${{ needs.makeTagAndRelease.outputs.tag_name }}
