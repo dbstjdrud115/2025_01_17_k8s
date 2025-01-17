@@ -13,6 +13,7 @@ public class HomeController {
     @Value("${custom.jwt.secretKey}")
     private String jwtSecretKey;
 
+
     @GetMapping("/")
     @ResponseBody
     public String showMain() throws UnknownHostException {
